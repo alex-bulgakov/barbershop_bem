@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Barbershop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header class="header">
     
       
-     <div class="header__container">
+     <div class="header__container clearfix">
        <nav class="header__menu">
              <ul>
-               <li class="header__btn header__btn--active">Главная</li>
-               <li class="header__btn"><a href="#">Информация</a></li>
-               <li class="header__btn"><a href="#">Новости</a></li>
-               <li class="header__btn"><a href="#">Прайс-лист</a></li>
-               <li class="header__btn"><a href="#">Магазин</a></li>
-               <li class="header__btn"><a href="#">Контакты</a></li>
+               <li class="btn btn--active">Главная</li>
+               <li class="btn"><a href="#">Информация</a></li>
+               <li class="btn"><a href="#">Новости</a></li>
+               <li class="btn"><a href="#">Прайс-лист</a></li>
+               <li class="btn"><a href="#">Магазин</a></li>
+               <li class="btn"><a href="#">Контакты</a></li>
              </ul>
            </nav>
            
            <div class="header__userblock">
-             <a href="#">Вход</a>
+             <a class="btn" href="#">Вход</a>
            </div>
      </div>
 
@@ -36,7 +38,7 @@
     
     
     <div class="content__container">
-          <img src="img/logo.png" alt="Barbershop" class="content__logo" width="368" height="204">
+          <a href="index.html"><img src="img/logo.png" alt="Barbershop" class="content__logo" width="368" height="204"></a>
           
            
           <div class="content__features">
@@ -99,21 +101,83 @@
                   </a>
                 </li>
               </ul>
-              <a href="#" class="news__btn">Все новости</a>
+              <a href="#" class="btn">Все новости</a>
+            </div>
+            
+            <div class="gallery">
+              <h2 class="gallery__title">
+                Фотогалерея
+              </h2>
+              <a href="#"><img src="img/photo-gallery.jpg" alt="gallery" width="286" height="164"></a>
+              <button class="btn" name="back">Назад</button>
+              <button class="btn" name="forward">Вперед</button>
             </div>  
           </div>
           
+          
           <div class="content__block">
             
+             <div class="contacts">
+              <h2 class="contacts__header">
+                Контактная информация
+              </h2>
+              <p class="address">
+                Barbershop "Borodinski"
+                Адрес: г. Москва, ул. Собаки Павлова, д.13
+                Телефон: +7(495) 666-02-666
+              </p>
+              <p class="contacts__time-work">
+                Время работы:
+                Пн - Пт: с 10:00 до 22:00
+                Сб - Вс: с 10:00 до 19:00
+              </p>
+              <a href="#" class="btn">Как проехать</a>
+              <a href="/" class="btn">Обратная связь</a>
+            </div>
+            
+            <div class="register">
+              <h2 class="register__title">
+                Записаться
+              </h2>
+              <p>
+                Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+              </p>
+              <form class="register__form" action="/" method="post">
+                <input type="date" class="register__input" name="date">
+                <input type="time" class="register__input" name="time">
+                <input type="text" class="register__input" name="name">
+                <input type="text" class="register__input" name="phone">
+                <input type="submit" class="btn" value="Отправить">
+              </form>
+            </div>
           </div>
     </div>
-    
     
   </main>
   
   
   
   
+<footer class="footer">
   
+    <p class="address">
+        Barbershop "Borodinski"
+        Адрес: г. Москва, ул. Собаки Павлова, д.13
+        Телефон: +7(495) 666-02-666
+    </p>
+    
+    <div class="footer__social">
+       <p class="footer_title">Давайте дружить</p>
+      <a href="#" class="btn btn--vk">vk.com</a>
+      <a href="#" class="btn btn--fb">facebook.com</a>
+      <a href="#" class="btn btn--inst">instagram.com</a>
+    </div>
+    <div class="footer__design">
+      <p class="footer__design">
+        Дизайн сайта
+      </p>
+      <a href="#" class="btn">glukhanko.ru</a>
+    </div>
+</footer>  
 </body>
 </html> 
