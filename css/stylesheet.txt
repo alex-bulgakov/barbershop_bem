@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-basket {
+    width: 18px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -33px -5px;
+}
+
+.sprite-checkbox_active {
+    width: 20px;
+    height: 20px;
+    background-position: -63px -5px;
+}
+
+.sprite-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -93px -5px;
+}
+
+.sprite-fb_hover {
+    width: 12px;
+    height: 22px;
+    background-position: -115px -5px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -137px -5px;
+}
+
+.sprite-inst_hover {
+    width: 21px;
+    height: 21px;
+    background-position: -168px -5px;
+}
+
+.sprite-radio {
+    width: 20px;
+    height: 20px;
+    background-position: -199px -5px;
+}
+
+.sprite-radio_active {
+    width: 20px;
+    height: 20px;
+    background-position: -229px -5px;
+}
+
+.sprite-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -259px -5px;
+}
+
+.sprite-vk_hover {
+    width: 25px;
+    height: 16px;
+    background-position: -294px -5px;
+}
