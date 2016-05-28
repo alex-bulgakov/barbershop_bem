@@ -1,0 +1,69 @@
+.header {
+  background: black;
+  margin: 0;
+  padding: 0;
+  .btn {
+    padding: 25px 20px;
+    position: relative;
+  }
+  .btn:not(.btn--active):hover {
+    background-color: #242424;
+  }
+  .btn--active::after {
+    content: "";
+    
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    
+    height: 4px;
+    
+    background: white;
+  }
+}
+
+
+.header__container {
+  .container;
+}
+
+
+.header__menu {
+  float: left;
+  font-size: 0;
+  width: 700px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+.header__userblock {
+  position: relative;
+  float: right;
+  .btn {
+    padding-left: 50px;
+  }
+}
+
+
+.header__userblock::before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 15px;
+  width: 18px;
+  height: 16px;
+  background: url(../img/sprite.png) no-repeat;
+  z-index: 1000;
+  background-position: -5px -5px; 
+  opacity: .3;
+}
+.header__userblock:hover:hover::before {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #242424;
+}

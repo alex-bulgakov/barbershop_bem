@@ -1,0 +1,50 @@
+.login {
+  @width: (460px-80*2);
+  
+  display: block;
+  
+  position: fixed;
+  left: 50%;
+  top: 120px;
+  
+  z-index: 1000;
+  
+  width: @width;
+  
+  padding: 55px 80px;
+  margin-left: -(@width/2);
+  
+  color: black;
+  background: url(../img/background2.jpg);
+  
+  
+  p {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.login__title {
+  font-size: 30px;
+  line-height: 42px;
+  
+  margin-bottom: 25px;
+}
+
+.login__user-pass {
+  .main-font;
+  
+  width: (300px-30-4);
+  
+  border: 2px solid black;
+  
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  
+  background: #f9f6f3;
+  
+  &:focus {
+    outline: none;
+  }
+}
