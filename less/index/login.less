@@ -1,7 +1,7 @@
 .login {
   @width: (460px-80*2);
   
-  display: block;
+  display: none;
   
   position: fixed;
   left: 50%;
@@ -22,7 +22,74 @@
     margin: 0;
     margin-bottom: 30px;
   }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+ input[type="checkbox"]:checked + .login__checkbox::before{
+    background-position: -63px -5px; 
+  }
+  
+  input[type="submit"] {
+    display: block;
+    
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  a {
+    color: black;
+    float: right;
+  }
+  
 }
+
+.login__close{
+  content: "";
+  
+  position: absolute;
+  top: 55px;
+  right: -71px;
+  
+  
+  width: 21px;
+  height: 21px;
+  
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -330px -5px;
+  
+  
+  opacity: .5;
+}
+
+.login__close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.login__checkbox {
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -33px -5px;
+  }
+}
+
+
 
 .login__title {
   font-size: 30px;
