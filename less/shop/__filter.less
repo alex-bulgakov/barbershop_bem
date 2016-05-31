@@ -1,0 +1,64 @@
+.shop-content__filter {
+  float: left;
+  
+  width: 220px;
+  margin-right: 20px;
+  
+  input {
+    display: none;
+  }
+  label {
+    position: relative;
+    
+    display: block;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    
+  }
+  input:not(:disabled) + label:hover {
+    color: #663d15;
+  }
+  input:disabled + label {
+    opacity: .3;
+  }
+  label::before {
+    content: "";
+    
+    position: absolute;
+    left: 0;
+    
+    display: block;
+  }
+  &-checkbox::before {
+    width: 20px;
+    height: 20px;
+    
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -33px -5px;
+  }
+  input[type="checkbox"]:checked + &-checkbox::before {
+    background-position: -63px -5px;
+  }
+  
+  &-radio::before {
+    width: 20px;
+    height: 20px;
+    
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -199px -5px;
+  }
+  input[type="radio"]:checked + &-radio::before {
+    background-position: -229px -5px; 
+  }
+  
+  
+  &-title {
+    margin-bottom: 30px;
+  }
+  
+  &-item {
+    margin-bottom: 50px;
+  }
+  
+}
+
