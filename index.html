@@ -203,10 +203,21 @@
 
   <script>
     var link = document.querySelector(".header__userblock a");
+    var modal = document.querySelector(".login");
+    var close = document.querySelector("#close");
+
     link.addEventListener("click", function(event){
       event.preventDefault();
-      console.log(" Клик по юзерблоку");
+      modal.classList.add("login--show");
     });
+
+    close.addEventListener("click", function(event){
+      event.preventDefault();
+      modal.classList.remove("login--show");
+    })
+
+
+
   </script>
 </body>
 </html> 
